@@ -46,9 +46,9 @@ This confirms the model is learning genuine visual features rather than memorizi
 
 ## Project Structure
 Task2/
-├── data/ # (EMNIST cached separately via tensorflow_datasets)
-├── notebooks/
-│ └── eda.ipynb # Full pipeline: EDA → preprocessing → CNN → training → evaluation
-├── models/
-│ └── emnist_cnn.keras
-└── README.md
+├── data/                  # Cached EMNIST datasets (loaded via tensorflow_datasets)
+├── models/                # Saved trained model artifacts
+│   └── emnist_cnn.keras   # Final trained CNN model in Keras format
+├── notebooks/             # Jupyter notebooks for development
+│   └── eda.ipynb          # End-to-end pipeline (EDA, preprocessing, CNN, training, eval)
+└── README.md              # Project documentation and setup guide
